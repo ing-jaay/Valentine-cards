@@ -14,7 +14,7 @@ body {
 }
 
 .card {
-    background-color: #dd5a5a;
+    background-color: #c76262;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@ body {
 }
 
 button {
-    background-color: #af1a29;
+    background-color: #d47e87;
     color: #fff;
     border: none;
     padding: 10px 20px;
