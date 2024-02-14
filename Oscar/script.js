@@ -14,7 +14,7 @@ function mostrarMensaje(respuesta) {
     heart.style.visibility = "hidden";
 
     if (respuesta === "Yes") {
-        card.style.backgroundImage = "url('./Resurces/PolaroidLalo1.jpg')";
+        card.style.backgroundImage = "url('./Resurces/AAA003.jpg')";
         document.body.style.backgroundImage = "url('./Resurces/hearts.gif')"; //
         // Texto que se va a escribir poco a poco
         var textoCompleto = "¡Te quiero mucho mi amor!";
