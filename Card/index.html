@@ -12,14 +12,15 @@
         <div class="card">
             <div class="heart"></div>
             <h1 id="titulo">Will you be my valentine?</h1>
-            <p id="para">For: Oscar Montoya</p>            
+            <p id="para">For: Quetimatipoti</p>            
         </div>  
         <br> 
-        <div>
-            <button onclick="mostrarMensaje('Yes')">Yes</button>
-            <button onclick="mostrarMensaje('No')">No</button>
-            <h2 id="mensaje" style="display: none;"> </h2>
-        </div>    
+        <div class="buttons-container">
+            <button onclick="mostrarMensaje('Yes')" class="btn btn-yes">Yes</button>
+            <button id="no-btn" class="btn btn-no">No</button>
+            
+        </div> 
+        <h2 id="mensaje" style="display: none;"></h2>  
     </div>
     <script src="script.js"></script>
 </body>
