@@ -1,0 +1,122 @@
+/* Importar fuente pixelada */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Estilo retro para el fondo */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #ff4d4d; /* Rojo más saturado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    text-shadow: 4px 4px 0px black; /* Sombra pixelada */
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+}
+
+/* Tarjeta de mensaje */
+.card {
+    background-color: #c76262;
+    padding: 30px; /* Aumentar el relleno */
+    border: 4px solid black; /* Bordes más gruesos para el estilo retro */
+    border-radius: 0px; /* Esquinas cuadradas para un look más retro */
+    box-shadow: 8px 8px 0px black; /* Sombra estilo pixelado */
+    max-width: 600px; /* Aumentar el ancho */
+    height: 500px; /* Aumentar la altura */
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    /* Ajustar la imagen de fondo */
+    background-size: cover;   /* Hace que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Borde punteado retro */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border: 2px dashed white;
+    pointer-events: none;
+}
+
+/* Aumentar el tamaño de los textos */
+.card h1, .card p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px; /* Texto más grande */
+    color: white;
+    text-shadow: 2px 2px 0px black;
+}
+
+
+/* Corazón animado */
+.heart {
+    width: 100px;
+    height: 100px;
+    background-image: url('./Resurces/JumpingHeart.gif');
+    background-size: contain;
+    margin: 0 auto 20px;
+}
+
+/* 📌 Contenedor de botones centrados */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Espacio entre botones */
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Estilos generales para botones */
+.btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    border: 4px solid black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 4px 4px 0px black;
+    position: relative;
+}
+
+/* Botón "Yes" */
+.btn-yes {
+    background-color: #00cc66;
+}
+
+.btn-yes:hover {
+    background-color: #00994d;
+    box-shadow: 2px 2px 0px black;
+    transform: translate(2px, 2px);
+}
+
+/* Botón "No" */
+.btn-no {
+    background-color: #ff3366;
+    transition: top 0.3s, left 0.3s;
+}
+.btn-no:hover {
+    background-color: #cc0044;
+    box-shadow: 2px 2px 0px black;
+    transform: translate(2px, 2px);
+}
+
+/* Títulos y mensajes con fuente retro */
+h1, h2, p {
+    font-family: 'Press Start 2P', cursive;
+}
